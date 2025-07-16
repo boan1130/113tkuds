@@ -33,9 +33,8 @@ public class Q5_CPBLPrefixWins {
 }
 
 /*
- * Time Complexity: O(n)
- * 說明：
- * 預先走訪 n 筆戰績資料建立 prefix sum 陣列；
- * 查詢前 k 場只需線性輸出，不影響複雜度；
- * 整體為 O(n)。
- */
+     * Time Complexity: O(n)
+     * 說明：建立 prefix sum 陣列需要遍歷 n 個元素，每次累加為常數時間操作
+     * 輸出前 k 場的 prefix sum 為 O(k)，但由於 k ≤ n，整體仍為 O(n)
+     * 因此總時間複雜度為 O(n + k) = O(n)
+     */

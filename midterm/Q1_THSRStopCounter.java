@@ -28,8 +28,8 @@ public class Q1_THSRStopCounter {
 }
 
 /*
- * Time Complexity: O(n)
- * 說明：
- * 走訪 n 個站點字串，依序比對起訖站是否出現；
- * 最多比對 n 次，屬於線性時間操作。
- */
+     * Time Complexity: O(n)
+     * 說明：需要遍歷長度為 n 的 stops 陣列一次來找到起始和終點站的索引
+     * 字串比較 equals() 在最壞情況下為 O(k)，k 為字串長度，但通常視為常數
+     * 因此整體時間複雜度為 O(n)
+     */

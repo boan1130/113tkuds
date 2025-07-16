@@ -52,6 +52,8 @@ public class Q4_TieredElectricBill {
 }
 
 /*
- * Time Complexity: O(n)
- * 說明：主程式逐一處理 n 筆用電量，對每筆用電量固定分段計算電費，操作為常數時間，總體為 O(n)。
- */
+     * Time Complexity: O(n)
+     * 說明：外層迴圈執行 n 次處理每筆用電量，每次呼叫 calc 方法為常數時間 O(1)
+     * calc 方法中的迴圈次數固定為 6（電費分段數），與輸入大小無關
+     * 因此整體時間複雜度為 O(n × 1) = O(n)
+     */

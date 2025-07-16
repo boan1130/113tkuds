@@ -48,9 +48,10 @@ public class Q2_NextTHSRDeparture {
     }
 }
 
+
 /*
- * Time Complexity: O(log n)
- * 說明：
- * 已排序時間轉為整數陣列後，使用 binary search 找出第一個大於查詢時間的索引；
- * 二分搜尋複雜度為 O(log n)。
- */
+     * Time Complexity: O(log n)
+     * 說明：主要時間複雜度由 binarySearch 方法決定，二分搜尋需要 O(log n) 次比較
+     * 輸入處理和時間轉換為 O(n)，但整體瓶頸在於二分搜尋的 O(log n)
+     * 因此整體時間複雜度為 O(n + log n) = O(n)
+     */
