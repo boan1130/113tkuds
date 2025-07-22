@@ -1,3 +1,4 @@
+
 class BubbleSortDemo {
     /**
      * 基本氣泡排序實作
