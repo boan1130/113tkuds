@@ -1,17 +1,16 @@
-package midterm;
-
+package finalexam;  
 import java.util.*;
 
-public class Q1_THSRStopCounter {
+public class F02_YouBikeNextFull {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int n = sc.nextInt(); // 讀取有幾筆時間
-        sc.nextLine();        // 吃掉換行，避免下一次讀到空字串！
+        int n = sc.nextInt(); 
+        sc.nextLine();       
 
         int[] times = new int[n];
 
-        // 讀入 n 行時間並轉為分鐘
+        
         for (int i = 0; i < n; i++) {
             String[] parts = sc.nextLine().split(":");
             int hour = Integer.parseInt(parts[0]);
@@ -19,11 +18,11 @@ public class Q1_THSRStopCounter {
             times[i] = hour * 60 + minute;
         }
 
-        // 查詢時間
+        
         String[] queryParts = sc.nextLine().split(":");
         int queryTime = Integer.parseInt(queryParts[0]) * 60 + Integer.parseInt(queryParts[1]);
 
-        // 二分搜尋找出第一個大於查詢時間的時間
+        
         int left = 0, right = n - 1;
         int ans = -1;
 
@@ -53,4 +52,3 @@ public class Q1_THSRStopCounter {
  * Time Complexity: O(log n)
  * 說明：以二分搜尋法在遞增時間陣列中查找第一個大於查詢時間的元素，時間複雜度為對數時間。
  */
-
